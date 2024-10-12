@@ -134,11 +134,18 @@ a:focus {
   bottom: 10px;
   left: 10px;
   right: 10px;
-  background: rgba(8, 8, 8, 0.8);
+  background: var(--background);
+  color: var(--on-background);
   padding: 10px;
   border-radius: 5px;
   display: flex;
   text-align: justify;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center; /* Alinha o conteúdo verticalmente ao centro */
+  height: 100%; /* Garante que o container ocupe toda a altura disponível */
+  padding: 10px 5px 5px 5px; 
 }
 
 /* Exibe a descrição ao passar o mouse sobre o card */
@@ -177,116 +184,6 @@ img {
   background-color: var(--background);
 }
 
-/* Ajuste do carrossel para caber na tela da sessão e posicionamento do texto ao lado da imagem */
-        .projects-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            position: relative;
-        }
-
-        .project-card {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            width: 100%;
-            max-width: 1200px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            background: #ffffff;
-            margin: 20px;
-            transition: transform 0.3s ease;
-        }
-
-        .project-card img {
-            
-            height: auto;
-            border-radius: 10px;
-            margin: 0;
-            padding: 0;
-        }
-
-        .project-info {
-            width: 60%;
-            text-align: left;
-        }
-
-        /* Estilos das setas do carrossel */
-        .carousel-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(243, 215, 210, 0.5);
-            color: #ffffff;
-            border: none;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .carousel-button.left {
-            left: 10px;
-        }
-
-        .carousel-button.right {
-            right: 10px;
-        }
-
-.carousel-item {
-    display: flex; /* Coloca a imagem e o texto lado a lado */
-    align-items: center; /* Alinha verticalmente a imagem e o texto */
-    gap: 20px; /* Espaço entre a imagem e o texto */
-    padding: 20px; /* Espaçamento interno para um layout mais limpo */
-}
-
-.carousel-item img {
-    width: 40%; /* Ajuste o tamanho da imagem conforme necessário */
-    height: auto;
-    border-radius: 10px;
-}
-
-.project-info {
-    flex: 1; /* O texto ocupa o espaço restante */
-    color: #fff; /* Ajuste a cor do texto para garantir legibilidade */
-    background: rgba(0, 0, 0, 0.5); /* Fundo para contraste melhor */
-    padding: 20px; /* Espaçamento interno para o texto */
-    border-radius: 10px;
-}
-
-
-
-.project-card img {
-  
-  height: auto;
-  object-fit:cover;
-}
-
-
-.project-info {
-  padding: 20px;
-  flex: 1;
-}
-
-.project-info h3 {
-  font-size: 1.5rem;
-  color: var(--on-background);
-  margin-bottom: 10px;
-}
-
-.project-info p {
-  color: var(--on-background-alt);
-  line-height: 1.6;
-  text-align: justify;
-}
 
 /* Buttons Section */
 button {
