@@ -382,3 +382,19 @@ input:checked + .slider::before {
   font-size: 30px;
   margin-right: 5px;
 }
+
+@media (max-width: 576px) {
+  body {
+    font-size: 0.9rem;
+  }
+  /* Adjustments for mobile devices */
+  .container {
+    padding: 5px;
+  }
+  .nav-bar {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
